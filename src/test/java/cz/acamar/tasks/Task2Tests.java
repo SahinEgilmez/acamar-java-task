@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class Task2Tests {
 
-    private Task2 task2 = new Task2();
+    private final Task2 task2 = new Task2();
 
     @Test
     void test_case1() {

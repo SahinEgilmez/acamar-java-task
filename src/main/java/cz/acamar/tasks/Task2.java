@@ -1,5 +1,7 @@
 package cz.acamar.tasks;
 
+import java.util.Arrays;
+
 public class Task2 {
 
     /**
@@ -18,6 +20,12 @@ public class Task2 {
      * @return - an array of the squares of each number sorted in non-decreasing order
      */
     public int[] squaresOfSortedArray(int[] input) {
-        return null;
+        int[] result = new int[input.length];
+        for (int i = 0; i < input.length; i++) {
+            result[i] = input[i] * input[i];
+        }
+
+        Arrays.sort(result);
+        return result;
     }
 }

@@ -16,7 +16,8 @@ public class Task1 {
      * @param str - a string s consisting of some words separated by some number of spaces.
      * @return - the length of the last word in the string.
      */
-    public int lengthOfLastWord(String str) {
-        return 0;
+    public int lengthOfLastWord(String str) { // maybe it could be one line method, but I didn't choose it
+        String[] arr = str.split(" ");
+        return arr[arr.length - 1].length();
     }
 }
